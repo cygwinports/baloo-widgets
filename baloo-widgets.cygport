@@ -1,0 +1,16 @@
+inherit kde4
+
+NAME="baloo-widgets"
+VERSION=4.13.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE next generation semantic search (UI library)"
+DESCRIPTION="Baloo is the next generation of the Nepomuk project. It is
+responsible for handling user metadata such as tags, rating and comments.
+It also handles indexing and searching for files, emails, contacts, and so on."
+
+PKG_NAMES="libbaloowidgets4 libbaloowidgets-devel"
+libbaloowidgets4_CONTENTS="usr/bin/cygbaloowidgets-4.dll usr/share/doc/"
+libbaloowidgets_devel_REQUIRES="libkdecore-devel libbaloocore-devel"
+libbaloowidgets_devel_OBSOLETES="libnepomukwidgets-devel"
+libbaloowidgets_devel_CONTENTS="usr/include/ usr/lib/"
